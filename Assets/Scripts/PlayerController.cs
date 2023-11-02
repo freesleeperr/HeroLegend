@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
-
+    PhysicsCheck _physicsCheck;
     public Playerinputcontroll inputControll;
     public Vector2 inputDirection;
     public float speed;
@@ -19,12 +19,9 @@ public class PlayerController : MonoBehaviour
     {
         inputControll = new Playerinputcontroll();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-
+        _physicsCheck = GetComponent<PhysicsCheck>();
         inputControll.Player.Jump.started += Jump;
     }
-
-
-
     private void OnEnable()
     {
         inputControll.Enable();
@@ -60,6 +57,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Jump(InputAction.CallbackContext context)
     {
-        _rigidbody2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        if (_physicsCheck.isGround)
+            _rigidbody2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
     }
 }
