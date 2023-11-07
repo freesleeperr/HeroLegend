@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!isHurt && !isAttack)
             Move();
-        CheckState()
+        CheckState();
     }
     void Move()
     {
