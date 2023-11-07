@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_6
+      name: a1
       rect:
         serializedVersion: 2
         x: 0
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_7
+      name: a2
       rect:
         serializedVersion: 2
         x: 56
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_8
+      name: a3
       rect:
         serializedVersion: 2
         x: 112
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_9
+      name: a4
       rect:
         serializedVersion: 2
         x: 168
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_10
+      name: a5
       rect:
         serializedVersion: 2
         x: 224
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_11
+      name: a6
       rect:
         serializedVersion: 2
         x: 280
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_12
+      name: a21
       rect:
         serializedVersion: 2
         x: 336
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_13
+      name: a22
       rect:
         serializedVersion: 2
         x: 392
@@ -908,7 +908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_38
+      name: injure1
       rect:
         serializedVersion: 2
         x: 0
@@ -929,7 +929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_39
+      name: injure2
       rect:
         serializedVersion: 2
         x: 56
@@ -950,7 +950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_40
+      name: injure3
       rect:
         serializedVersion: 2
         x: 112
@@ -971,7 +971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_41
+      name: injure4
       rect:
         serializedVersion: 2
         x: 168
@@ -992,10 +992,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_42
+      name: dead1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 224
         width: 56
         height: 56
@@ -1013,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_43
+      name: dead2
       rect:
         serializedVersion: 2
         x: 56
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_44
+      name: dead3
       rect:
         serializedVersion: 2
         x: 112
@@ -1055,7 +1055,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_45
+      name: dead4
       rect:
         serializedVersion: 2
         x: 168
@@ -1076,7 +1076,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_46
+      name: dead5
       rect:
         serializedVersion: 2
         x: 224
@@ -1097,7 +1097,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_47
+      name: dead6
       rect:
         serializedVersion: 2
         x: 280
@@ -1118,7 +1118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_48
+      name: dead7
       rect:
         serializedVersion: 2
         x: 336
@@ -1139,7 +1139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_49
+      name: dead8
       rect:
         serializedVersion: 2
         x: 392
@@ -1160,7 +1160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_50
+      name: dead9
       rect:
         serializedVersion: 2
         x: 0
@@ -1181,7 +1181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_51
+      name: dead10
       rect:
         serializedVersion: 2
         x: 56
@@ -1202,7 +1202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_52
+      name: dead11
       rect:
         serializedVersion: 2
         x: 112
@@ -1223,7 +1223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_green_1_53
+      name: dead12
       rect:
         serializedVersion: 2
         x: 168
@@ -1548,12 +1548,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      a1: 509500500
+      a2: -550734503
+      a21: -2126231858
+      a22: -113968237
+      a3: 1668459345
+      a4: -1646875912
+      a5: 1024968203
+      a6: 1877816804
       char_green_1_0: 1063315549
       char_green_1_1: -380559000
-      char_green_1_10: 1024968203
-      char_green_1_11: 1877816804
-      char_green_1_12: -2126231858
-      char_green_1_13: -113968237
       char_green_1_14: 1594223088
       char_green_1_15: -1749815064
       char_green_1_16: 2144966871
@@ -1564,31 +1568,14 @@ TextureImporter:
       char_green_1_20: 509285346
       char_green_1_21: -891276689
       char_green_1_3: -1117984376
-      char_green_1_38: -885658190
-      char_green_1_39: 1460053822
       char_green_1_4: -518287527
-      char_green_1_40: -1318545406
-      char_green_1_41: 1034477527
-      char_green_1_42: 1157213101
-      char_green_1_43: -2022856474
-      char_green_1_44: 1318333408
-      char_green_1_45: -1838657576
-      char_green_1_46: 106713168
-      char_green_1_47: 497264973
-      char_green_1_48: -1334206898
-      char_green_1_49: -1218905081
       char_green_1_5: 989590603
-      char_green_1_50: 1231476129
-      char_green_1_51: -724198489
-      char_green_1_52: -907670523
-      char_green_1_53: 1168267966
       char_green_1_54: 1993701066
       char_green_1_55: -1417645768
       char_green_1_56: -217999551
       char_green_1_57: -652454537
       char_green_1_58: 1324192168
       char_green_1_59: 1423967030
-      char_green_1_6: 509500500
       char_green_1_60: -2101339812
       char_green_1_61: -2118137465
       char_green_1_62: 1001594065
@@ -1597,9 +1584,22 @@ TextureImporter:
       char_green_1_65: 519011898
       char_green_1_66: 576761374
       char_green_1_67: 1581888832
-      char_green_1_7: -550734503
-      char_green_1_8: 1668459345
-      char_green_1_9: -1646875912
+      dead1: 1157213101
+      dead10: -724198489
+      dead11: -907670523
+      dead12: 1168267966
+      dead2: 1318333408
+      dead3: 1318333408
+      dead4: -1838657576
+      dead5: 106713168
+      dead6: 497264973
+      dead7: -1334206898
+      dead8: -1218905081
+      dead9: 1231476129
+      injure1: -885658190
+      injure2: 1460053822
+      injure3: -1318545406
+      injure4: 1034477527
       jump1-1: -1704967004
       jump1-2: -431732719
       jump2-1: 2049701872
