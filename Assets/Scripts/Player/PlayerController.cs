@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
     }
     private void PlayAttack(InputAction.CallbackContext context)
     {
+        if (!_physicsCheck.isGround) return;
         _playerAnimation.PlayAttack();
         isAttack = true;
         //combo++;

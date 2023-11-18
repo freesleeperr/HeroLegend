@@ -8,6 +8,13 @@ public class PhysicsCheck : MonoBehaviour
     public LayerMask groundLayer;
     public float checkRadius;
     public Vector2 buttomOffset;
+
+
+    [Header("碰撞墙壁检测")]
+    public bool isTouchLeftWall;
+    public bool isTouchRightWall;
+    public Vector2 leftOffset;
+    public Vector2 rightOffset;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +30,15 @@ public class PhysicsCheck : MonoBehaviour
     {
         isGround = Physics2D.OverlapCircle((Vector2)transform.position + buttomOffset, checkRadius, groundLayer);
 
+        isTouchLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, checkRadius, groundLayer);
+        isTouchRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, checkRadius, groundLayer);
+
+
     }
     void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere((Vector2)transform.position + buttomOffset, checkRadius);
+        Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, checkRadius);
+        Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, checkRadius);
     }
 }
