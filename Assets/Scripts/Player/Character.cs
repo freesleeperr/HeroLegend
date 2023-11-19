@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 public class Character : MonoBehaviour
@@ -12,6 +13,7 @@ public class Character : MonoBehaviour
     public float invulnerableDuration;
     public float invulnerableCounter;
     public bool invulnerable;
+    public UnityEvent<Character> OnHealthChange;
     public UnityEvent<Transform> OnTakeDamage;
     public UnityEvent OnDie;
 
@@ -31,12 +33,14 @@ public class Character : MonoBehaviour
             //出发死亡
             OnDie?.Invoke();
         }
+        OnHealthChange?.Invoke(this);
 
     }
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        OnHealthChange?.Invoke(this);
     }
 
     // Update is called once per frame

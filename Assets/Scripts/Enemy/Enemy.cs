@@ -108,6 +108,7 @@ public class Enemy : MonoBehaviour
         return Physics2D.BoxCast(transform.position + (Vector3)centerOffset, checkSize, 0, faceDir, checkDistance, attackLayer);
 
     }
+    //切换状态
     public void SwitchState(NPCState state)
     {
         var newState = state switch
@@ -160,6 +161,7 @@ public class Enemy : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+    //显示野兽显示范围
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position + (Vector3)centerOffset + new Vector3(checkDistance * -transform.localScale.x, 0), 0.2f);

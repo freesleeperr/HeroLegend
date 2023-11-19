@@ -25,12 +25,12 @@ public class BoarPatrolState : BaseState
     {
         currentEnemy = enemy;
         currentEnemy.currentSpeed = currentEnemy.normalSpeed;
-        Debug.Log("onEnter");
+
     }
     public override void OnExit()
     {
         currentEnemy.animator.SetBool("isWalk", false);
-        Debug.Log("Exit");
+
     }
 
     public override void PhysicsUpdate()
