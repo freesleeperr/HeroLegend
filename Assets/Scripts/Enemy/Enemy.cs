@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     public float waitTimeCounter;
     public float lostTime;
     public float lostTimeCounter;
+    public float atkFreeze;
     public bool isWait;
     public bool isHurt;
     public bool isDead;
@@ -73,7 +74,7 @@ public class Enemy : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!isWait && !isHurt && !isDead)
+        if (!isHurt && !isDead)
             Move();
     }
 
@@ -147,7 +148,7 @@ public class Enemy : MonoBehaviour
     IEnumerator OnHurt(Vector2 dir)
     {
         _rigidbody2D.AddForce(dir * hurtForce, ForceMode2D.Impulse);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(atkFreeze);
         isHurt = false;
 
     }
