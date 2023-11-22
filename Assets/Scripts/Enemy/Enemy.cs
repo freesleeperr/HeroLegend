@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     public float waitTimeCounter;
     public float lostTime;
     public float lostTimeCounter;
+    public float hurtFreeze;
     public bool isWait;
     public bool isHurt;
     public bool isDead;
@@ -42,6 +43,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         physicsCheck = GetComponent<PhysicsCheck>();
         currentSpeed = normalSpeed;
+        waitTimeCounter = 0;
 
     }
     private void OnEnable()
@@ -49,10 +51,7 @@ public class Enemy : MonoBehaviour
         currentState = patrolState;
         currentState.OnEnter(this);
     }
-    private void Start()
-    {
-        waitTimeCounter = waitTime;
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -73,7 +72,7 @@ public class Enemy : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!isWait && !isHurt && !isDead)
+        if (!isHurt && !isDead)
             Move();
     }
 
@@ -147,7 +146,7 @@ public class Enemy : MonoBehaviour
     IEnumerator OnHurt(Vector2 dir)
     {
         _rigidbody2D.AddForce(dir * hurtForce, ForceMode2D.Impulse);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(hurtFreeze);
         isHurt = false;
 
     }
