@@ -7,11 +7,11 @@ public class BoarPatrolState : BaseState
     public override void LogicUpdate()
     {
 
-        if (currentEnemy.FoundPlayer())
+        if (currentEnemy.FoundPlayer() && currentEnemy.physicsCheck.isGround)
         {
             currentEnemy.SwitchState(NPCState.Chase);
         }
-        if (!currentEnemy.physicsCheck.isGround || (currentEnemy.physicsCheck.isTouchLeftWall && currentEnemy.faceDir.x < 0) || (currentEnemy.physicsCheck.isTouchRightWall && currentEnemy.faceDir.x > 0))
+        if ((!currentEnemy.physicsCheck.isGround) || (currentEnemy.physicsCheck.isTouchLeftWall && currentEnemy.faceDir.x < 0) || (currentEnemy.physicsCheck.isTouchRightWall && currentEnemy.faceDir.x > 0))
         {
             currentEnemy.isWait = true;
             currentEnemy.animator.SetBool("isWalk", false);

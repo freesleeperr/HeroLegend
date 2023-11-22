@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[CreateAssetMenu(menuName = "Event/CharacterEventSO")]
+[CreateAssetMenu(fileName = "Event/CharacterEventSO")]
 public class CharacterEventSO : ScriptableObject
 {
     public UnityAction<Character> OnEventRaised;
