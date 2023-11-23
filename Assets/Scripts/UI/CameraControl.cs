@@ -33,7 +33,7 @@ public class CameraControl : MonoBehaviour
     //TODO:场景切换后更改
     private void GetNewCameraBounds()
     {
-        var obj = GameObject.FindGameObjectWithTag("Bounds");
+        var obj = GameObject.FindGameObjectWithTag("Bound");
         if (obj == null)
         {
             return;

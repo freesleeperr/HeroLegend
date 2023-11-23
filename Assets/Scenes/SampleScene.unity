@@ -1067,7 +1067,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 16, y: -5, z: 0}
@@ -1122,7 +1122,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: -3, z: 0}
@@ -1221,7 +1221,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -1858,7 +1858,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 1, z: 0}
@@ -1902,7 +1902,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 16, y: 2, z: 0}
@@ -1924,7 +1924,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 3, z: 0}
@@ -2023,7 +2023,7 @@ Tilemap:
       - {fileID: 1705026460, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 1395883833, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
       - {fileID: 503093997, guid: dd4b90d203a81c047947a5a4c5f8435b, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 15, y: 6, z: 0}
@@ -9691,7 +9691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playAudioEvent: {fileID: 11400000, guid: d5cff35aaf782ff4abc4370ac3b7595b, type: 2}
   audioClip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
-  isPlayEnable: 1
+  isPlayEnable: 0
 --- !u!4 &1714269051
 Transform:
   m_ObjectHideFlags: 0
@@ -10324,7 +10324,7 @@ AudioSource:
   m_GameObject: {fileID: 1981012518}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5243247689461740621, guid: ffaf73504d9bec8488d61768981124ce, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -10435,7 +10435,7 @@ AudioSource:
   m_GameObject: {fileID: 1981012518}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7683376453716493385, guid: ffaf73504d9bec8488d61768981124ce, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

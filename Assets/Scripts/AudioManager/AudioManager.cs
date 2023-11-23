@@ -23,8 +23,8 @@ public class AudioManager : MonoBehaviour
     }
     private void OnBGMEvent(AudioClip clip)
     {
-        FXSource.clip = clip;
-        FXSource.Play();
+        BGMSource.clip = clip;
+        BGMSource.Play();
     }
 
     private void OnFXEvent(AudioClip clip)
